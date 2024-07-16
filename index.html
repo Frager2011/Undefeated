@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google-adsense-account" content="ca-pub-5123275380153057">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undefeated</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone"
+      rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+      <link rel="icon" type="image/png" href="image.png">
+      <style>
+        #changing-word {
+          transition: opacity 1s; /* add transition effect to opacity */
+        }
+      </style>
+</head>
+<body>
+        <div class="nav">
+            <!-- Navigation content here -->
+            <div class="menu">
+                <input type="checkbox" name="" id="menu" />
+                <div class="logo">Undefeated<label for="menu"></label></div>
+                <div class="items">
+                    <a href="index.html" class="item">Home</a>
+                    <a href="Join.html" class="item">Join Undefeat!</a>
+                    <a href="Games.html" class="item">Games</a>
+                    <a href="Contact.html" class="item">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="image"><img src="image.png" alt="undefeated"></div>
+
+        <div class="welcome-text">
+          <h1>Welcome to Undefeated Clan Website</h1>
+          <div class="changing-word-container">
+            <span id="changing-word">Swordbattle.io</span>
+          </div>
+        </div>
+        <script>
+           const words = ["Swordbattle.io", "Cryzen.io", "Battledudes.io"];
+      let index = 0;
+      const changingWordSpan = document.getElementById("changing-word");
+
+      setInterval(() => {
+        changingWordSpan.style.opacity = 0; // set opacity to 0 to fade out
+        setTimeout(() => {
+          changingWordSpan.textContent = words[index];
+          changingWordSpan.style.opacity = 1; // set opacity to 1 to fade in
+        }, 700); // wait for 750ms before changing the text
+        index = (index + 1) % words.length;
+      }, 3058); // change every 2.789 seconds
+        </script>
+        <script async src="https://fundingchoicesmessages.google.com/i/pub-5123275380153057?ers=1" nonce="ltA5p9uAVEqPQcnhnNtOXA"></script><script nonce="ltA5p9uAVEqPQcnhnNtOXA">(function() {function signalGooglefcPresent() {if (!window.frames['googlefcPresent']) {if (document.body) {const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe);} else {setTimeout(signalGooglefcPresent, 0);}}}signalGooglefcPresent();})();</script>
+      </body>
+</html>
